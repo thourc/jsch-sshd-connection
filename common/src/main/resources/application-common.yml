@@ -1,0 +1,24 @@
+application:
+  backupRetention: "${BACKUP_RETENTION:15}"
+  pgp:
+    pgpFilePath: "${PGP_FILE_PATH:/tmp}"
+    key:
+      sasPublicKeyFilePath: "${PGP_SAS_PUBLIC_KEY:null}"
+      publicKeyFilePath: "${PGP_ADASTRA_PUBLIC_KEY:null}"
+      secretKeyFilePath: "${PGP_CORES_SECRET_KEY:null}"
+      passphrase: "${PGP_CORES_PASSPHRASE:null}"
+    file:
+      errorSourceFile: "${PGP_FILE_PATH:/tmp}/"
+      snapshotSourceFile: "${PGP_FILE_PATH:/tmp}/"
+      sasSnapshotFile: "${PGP_FILE_PATH:/tmp}/"
+  sftp:
+    host: "${SFTP_HOST:localhost}"
+    port: "${SFTP_PORT:22}"
+    username: "${SFTP_USERNAME:appuser}"
+    password: "${SFTP_PASSWORD:appuser}"
+    filepath: "${SFTP_FILE_PATH:/tmp}"
+    outFilePath: "${SFTP_OUT_FILE_PATH:/tmp}"
+    sasOutFilePath: "${SFTP_SAS_OUT_FILE_PATH:/tmp}"
+    filePattern: "${SFTP_FILE_PATTERN:TMP}"
+    sessionTimeout: "${SFTP_SESSION_TIMEOUT:15000}"
+    channelTimeout: "${SFTP_CHANNEL_TIMEOUT:15000}"

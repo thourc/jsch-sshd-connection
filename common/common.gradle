@@ -1,0 +1,16 @@
+apply plugin: 'java-library'
+
+dependencies {
+    compileOnly 'com.rogers:sid-models'
+    implementation 'org.springframework.integration:spring-integration-sftp'
+    implementation 'org.bouncycastle:bcpg-jdk15on'
+    implementation 'org.bouncycastle:bcprov-jdk15on'
+    implementation 'org.apache.sshd:sshd-core:2.9.2'
+    implementation 'org.apache.sshd:sshd-sftp:2.9.2'
+    implementation 'com.hierynomus:sshj:0.35.0'
+    implementation'com.jcraft:jsch:0.1.55'
+
+
+
+}
+

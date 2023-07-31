@@ -1,0 +1,35 @@
+config {
+    info {
+        description = 'Core Service: Rogers Bank Management'
+        inceptionYear = '2021'
+    }
+
+    quality {
+        sonar {
+            configProperties = [
+                    'sonar.cpd.exclusions': '**/ApplicationConfig.java,**/PGPConfig.java,**/encryption/service/SftpProcessor.java'
+            ]
+        }
+    }
+}
+
+subprojects {
+    dependencies {
+        constraints {
+            configurations.all { Configuration c ->
+                add(c.name, 'com.rogers:sid-models:1.0.22')
+                add(c.name, 'com.rogers.imi:clients:1.1.8')
+                add(c.name, 'org.bouncycastle:bcpg-jdk15on:1.67')
+                add(c.name, 'org.bouncycastle:bcprov-jdk15on:1.67')
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation 'bouncycastle:bouncycastle-jce-jdk13:112'
+}
+
+repositories {
+    mavenCentral()
+}
