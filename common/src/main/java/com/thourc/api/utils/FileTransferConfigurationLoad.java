@@ -1,4 +1,4 @@
-package com.rogers.api.utils;
+package com.thourc.api.utils;
 
 import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Value;
