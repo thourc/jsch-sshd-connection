@@ -1,4 +1,4 @@
-package com.rogers.api.utils;
+package com.thourc.api.utils;
 
 import org.bouncycastle.openpgp.*;
 import org.bouncycastle.openpgp.operator.jcajce.JcaKeyFingerprintCalculator;
