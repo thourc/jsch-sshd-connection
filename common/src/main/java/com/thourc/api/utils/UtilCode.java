@@ -1,4 +1,4 @@
-package com.rogers.api.utils;
+package com.thourc.api.utils;
 
 public Class UtilCode{
 
