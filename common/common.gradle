@@ -1,7 +1,7 @@
 apply plugin: 'java-library'
 
 dependencies {
-    compileOnly 'com.rogers:sid-models'
+
     implementation 'org.springframework.integration:spring-integration-sftp'
     implementation 'org.bouncycastle:bcpg-jdk15on'
     implementation 'org.bouncycastle:bcprov-jdk15on'
