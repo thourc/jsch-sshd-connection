@@ -1,4 +1,4 @@
-package com.rogers.api.manager;
+package com.thourc.api.manager;
 
 import com.rogers.api.utils.KeyBasedFileProcessor;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
