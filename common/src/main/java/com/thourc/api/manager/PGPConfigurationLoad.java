@@ -1,4 +1,4 @@
-package com.rogers.api.manager;
+package com.thourc.api.manager;
 
 import com.rogers.springboot.YamlPropertySourceFactory;
 import org.springframework.beans.factory.annotation.Value;
